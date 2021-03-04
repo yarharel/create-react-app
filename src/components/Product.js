@@ -1,11 +1,10 @@
 import {Link} from "react-router-dom";
-import ProductDetails from "../views/ProductDetails";
 
 function Product({id, img, title, price}) {
     const idLink = `/` + id
     return (
         <div className="product-card">
-            <Link to={idLink} children={<ProductDetails/>}>
+            <Link to={idLink}>
                 <div className="product-image">
                     <img alt="product-img" src={img}/>
                 </div>

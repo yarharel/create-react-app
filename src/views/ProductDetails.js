@@ -9,7 +9,7 @@ export default function ProductDetails() {
         fetch(`https://fakestoreapi.com/products/${id}`)
             .then((response) => response.json())
             .then((json) => setProduct(json)).then();
-    }, []);
+    }, [id]);
     const {title, price} = product
     return <div>
         <h3>ID: {id}</h3>
